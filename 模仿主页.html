@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <script type="text/javascript">
+        function yes(){
+        document.getElementById("first").style.display="";
+        document.getElementById("second").style.display="none";
+        }
+        function no(){
+        document.getElementById("second").style.display="";
+        document.getElementById("first").style.display="none";  
+        }
+    </script>
+    <style>  
+        .div1{
+            width: 500px;
+            height: 700px;
+            margin: 35px;
+            background-color: #92b1bf ;
+            box-shadow: 3px 3px 3px 3px rgb(240,240,240);
+            border-radius: 20px;
+            position: absolute;
+            left: 30%;
+        }
+        .div2{
+            width: 80%;
+            height: 80%;
+            text-align: center;
+            border-style:solid;
+            border-width: 1px;
+            border-radius: 10px;
+            position: relative;
+            top: 10%;
+            left: 10%;
+        }
+        .photo{
+            margin: 50px;
+            width: 300px;
+            height: 100px;;
+        }
+        .div3{
+            position: relative;
+
+        }
+        .myform{
+            position: relative;
+            line-height: 400%;
+            margin: 5%;
+            border-style: solid;
+            border-width: 2px;
+        }
+        .init{
+            font-size: larger;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+            font-size: x-large;
+            position: relative;
+            align-content: center;
+            width: 70%;
+            left: 15%;
+        }
+        .div4{
+
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body{background: url(http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mccViXqHVFEORcbgRSdDGwB2AFqO3lYMpRUeODutdvNQyG1O2BkB3aj1R77ozMfJjSoqbPZ1YgZ7.esCKECtzK3g!/b&bo=kAZeAwAAAAABJ8s!&rf=viewer_4) no-repeat;background-size:cover;}
+    </style>
+    <div class="div1">
+        <div class="div2">
+            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mcWVFdOTw6jFMc6M0lrzdJoxnJSW8jLeV1SVSbhuEqljtFbyekMChK3OTcA..MFIBbcwkLUoie9xDkUeEKl9eK7s!/b&bo=GwFbAAAAAAADF3M!&rf=viewer_4"class="photo"/>
+            <div  id="first" class="div3">
+                <div class="flex">
+                    <a href="#" onclick="yes()" style="text-decoration:none;">验证码登录</a>
+                    <a href="#" onclick="no()" style="text-decoration:none;">密码登录</a>
+                </div>
+                <form class="myform">
+                    <input class="init" type="passward" name="pwd" value="请输入手机号"><br>
+                    <input class="init" type="text" name="txt" value="请输入验证码"><br>
+                    <input class="init" type="submit" name="sumbit" value="登录"><br>
+                    <div class="flex">
+                        <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101559500&redirect_uri=https:%2F%2Fcpo.qq.com%2Fconnect%2Fcallback&scope=get_user_info">
+                            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mcfowxViqNiokkIu1PaQbk2aRG*8umuJ1quIiEk5HaptI0n5jdH0WVTp4WGi2.T7nY9f19EEzinPHBzkkylx9CBs!/b&bo=PAAeAAAAAAADFxA!&rf=viewer_4"text-decoration:none;"/>
+                        </a>
+                        <a href="https://wx2.qq.com/">
+                            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mcfowxViqNiokkIu1PaQbk2Z8LcyL3SjR51AmMF.adI7OCpgEzb5Vt5gfGhFN*Kngi4sTe3*9.gbPjMt3bZqST9I!/b&bo=QwAfAAAAAAADF24!&rf=viewer_4"text-decoration:none;"/>
+                        </a>
+                        <a href="https://mail.qq.com/">
+                            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mceXnoobvtrsA63ZkMiMu7a3XDeE2bHyB.2x75AlqMHQzP7ZdrTWw66o.t5ljEMnLhBi9IZNtFtnEMIqjINAmB*M!/b&bo=PAAfAAAAAAADFxE!&rf=viewer_4"text-decoration:none;"/>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div id="second" class="div3" style="display: none;">
+                <div class="flex">
+                    <a href="#" onclick="yes()" style="text-decoration:none;">验证码登录</a>
+                    <a href="#" onclick="no()" style="text-decoration:none;">密码登录</a>
+                </div>
+                <form class="myform">
+                    <input class="init" type="passward" name="pwd" value="请输入账号"><br>
+                    <input class="init" type="text" name="txt" value="请输入密码"><br>
+                    <input class="init" type="submit" name="sumbit" value="登录"><br>
+                    <div class="flex">
+                        <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101559500&redirect_uri=https:%2F%2Fcpo.qq.com%2Fconnect%2Fcallback&scope=get_user_info">
+                            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mcfowxViqNiokkIu1PaQbk2aRG*8umuJ1quIiEk5HaptI0n5jdH0WVTp4WGi2.T7nY9f19EEzinPHBzkkylx9CBs!/b&bo=PAAeAAAAAAADFxA!&rf=viewer_4"text-decoration:none;"/>
+                        </a>
+                        <a href="https://wx2.qq.com/">
+                            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mcfowxViqNiokkIu1PaQbk2Z8LcyL3SjR51AmMF.adI7OCpgEzb5Vt5gfGhFN*Kngi4sTe3*9.gbPjMt3bZqST9I!/b&bo=QwAfAAAAAAADF24!&rf=viewer_4"text-decoration:none;"/>
+                        </a>
+                        <a href="https://mail.qq.com/">
+                            <img src="http://m.qpic.cn/psc?/V13cItKP0CiJZ5/45NBuzDIW489QBoVep5mceXnoobvtrsA63ZkMiMu7a3XDeE2bHyB.2x75AlqMHQzP7ZdrTWw66o.t5ljEMnLhBi9IZNtFtnEMIqjINAmB*M!/b&bo=PAAfAAAAAAADFxE!&rf=viewer_4"text-decoration:none;"/>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
